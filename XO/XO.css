@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+
+body{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    background: black;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.game{
+    display: flex;
+}
+.comment{
+    color: aqua;
+    margin-left: 125px;
+    margin-right:  0px ;
+    width: 130px;
+}
+.division{
+    /* background-color: aqua; */
+    width: 100px;
+    height: 100px;
+    margin: 1px ;
+    cursor: pointer;
+    margin-top: 2px;
+    color: black;
+}
+
+
+.possition{
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 55px;
+
+
+    transition: 0.3s all;
+
+    background: linear-gradient(45deg, rgba(75,75,196,1) , rgba(0,212,255,1));
+
+    background-size: 600% 600%;
+    
+}
+
+.a{
+ width: 50px;
+ height: 50px;
+ margin-left: 0px;
+ display: flex;
+ flex-direction: column;
+}
+
+.b{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bgc{
+    background-color: rgb(83, 82, 82);
+}
+
+.x{
+    width: 100%;
+    text-align: center;
+}
+
+.division:hover{
+    background: linear-gradient(45deg, rgba(75,75,196,1) , rgba(0,212,255,1));
+    background-size: 600% 600%;
+    animation-direction: alternate;
+    animation: gradient 5s ease infinite;
+}
+
+.division{
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(45deg, rgb(75, 75, 196), rgb(0, 212, 255));
+}
+
+.num{
+    color: red;
+    transition: 30s all;
+}
+
+.commandab{
+    display: flex;
+}

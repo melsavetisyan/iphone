@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+@keyframes rotation {from {transform: rotate(0deg)} to {transform: rotate(359deg)}}
+@keyframes gradient {0% {background-position: 0%}100% {background-position: 100%}}
+.a:hover{color: grey;}
+.progressContainer:hover{transform: scale(1, 1.2)}
+.volBar:hover{transform: scale(1, 1.2)}
+.toHome:hover{transform: scale(1.05)}   
+.app:hover{transform: scale(1.05)}
+.app:active{transform: scale(0.9)}
+.toHome:hover{transform: scale(1.05)}
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plusMinus procent division"
+    "seven eight nine multiplay"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    margin-top: 50px;
+    grid-gap: 15px;
+    justify-items: center;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    background: #333;  
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+.btn.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+.btn:hover{filter: brightness(120%)}
+.btn:active{filter: brightness(90%)}
+.btn.bgGrey{background: #a6a6a6;}
+.btn.bgOrange{background: #ff9501;}
+.calcScreen p {
+    text-align: right;
+    font-size: 4rem;
+}
+
+.division{
+    width: 50px;
+    height: 50px;
+    margin: 1px ;
+    cursor: pointer;
+    margin-top: 2px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 55px;
+    transition: 0.3s all;
+    background: linear-gradient(45deg, rgba(75,75,196,1) , rgba(0,212,255,1));
+    background-size: 600% 600%;    
+}
+.division:hover{
+    background: linear-gradient(45deg, rgba(75,75,196,1) , rgba(0,212,255,1));
+    background-size: 600% 600%;
+    animation-direction: alternate;
+    animation: gradient 5s ease infinite;
+}
+
+.division{
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(45deg, rgb(75, 75, 196), rgb(0, 212, 255));
+}
+
+.num{
+    color: red;
+    transition: 30s all;
+}
+body{
+    user-select: none;
+    color: white;
+    font-family: Nunito, sans-serif;
+}
